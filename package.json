@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "node src/index.ts",
-    "build": "rimraf ./build && tsc",
-    "start-prod": "npm run build && node build/index.js"
+    "start-prod": "node src/index.ts"
   },
   "keywords": [],
   "author": "",
