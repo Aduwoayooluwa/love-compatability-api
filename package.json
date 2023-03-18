@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon src/index.ts",
-    "start-prod": "node src/index.ts"
+    "start-dev": "node src/index.ts",
+    "build": "rimraf ./build && tsc",
+    "start-prod": "npm run build && node build/index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@types/cors": "^2.8.13",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "rimraf": "^4.4.0"
   }
 }
